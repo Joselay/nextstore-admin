@@ -14,10 +14,6 @@ datasource db {
   relationMode = "prisma"
 }
 
-generator erd {
-  provider = "prisma-erd-generator"
-}
-
 model Store {
   id         String      @id @default(uuid())
   name       String
